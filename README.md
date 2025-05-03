@@ -4,7 +4,7 @@ This repository contains my resume written in LaTeX. It is clean, minimal, and e
 
 ## Preview
 
-[📄 Click to view my resume (PDF)](./resume.pdf)
+[📄 Click to view my resume (PDF)](./main.pdf)
 
 <embed src="main.pdf" type="application/pdf" width="100%" height="600px">
 
