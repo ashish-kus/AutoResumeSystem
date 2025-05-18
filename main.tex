@@ -1,6 +1,5 @@
 \documentclass[letterpaper,10pt]{article}
 
-
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -8,7 +7,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -19,7 +18,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\topmargin}{-0.7in}
 \addtolength{\textheight}{1.0in}
 \setlength{\footskip}{5pt}
 
@@ -47,11 +46,12 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
-\newcommand{\resumeProjectHeading}[2]{
+
+\newcommand{\resumeProjectHeading}[4]{
   \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small\textbf{#1} & \textit{#2} \\
-    \end{tabular*}\vspace{-5pt}
+      \small\textbf{\href{#2}{#1}} $|$  \textbf{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -65,8 +65,8 @@
 %----------HEADING----------
 
 \begin{tabularx}{\textwidth}{X r}
-  \textbf{\LARGE Ashish Kushwaha} & \href{https://github.com/ashish-kus}{\textcolor{blue}{Github: ashish-kus}} \\
-  \textbf{Software Developer Engineer} & \href{mailto:ashish.kus2408@gmail.com}{\textcolor{blue}{Email: ashish.kus2408@gmail.com}} \\
+  \textbf{\LARGE Ashish Kushwaha} & \href{https://github.com/ashish-kus}{\textcolor{blue}{github.com/ashish-kus}} \\
+  \textbf{Software Developer Engineer} & \href{mailto:ashish.kus2408@gmail.com}{\textcolor{blue}{ashish.kus2408@gmail.com}} \\
   Mobile: +91 7525874187 & \href{https://www.linkedin.com/in/ashish-kushwaha2408}{\textcolor{blue}{linkedin.com/in/ashish-kushwaha2408}} \\
 \end{tabularx}
 
@@ -111,11 +111,12 @@
       \resumeItem{Integrated Razorpay and Stripe payment gateways, streamlining the donation process and improving user experience.}
     \resumeItemListEnd
 
+
     \resumeSubheading
     {Web Developer Intern | Gautam Buddha University}{March 2023 – June 2023}
     {Greater Noida, in campus}{}
     \resumeItemListStart
-      \resumeItem{Developed a full-stack web app with MERN stack to manage and track job applicants for university positions.}
+      \resumeItem{Designed and developed a frontend of web app with MERN stack to manage and track job applicants for university positions.}
       \resumeItem{Collaborated with the Registrar’s Office to gather requirements and deliver features, optimizing the hiring process.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -125,27 +126,28 @@
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {Waybar-Hotspot $|$ Bash, Zenity, create\_ap, QR}{Feb 2024 – Present}
+  {Waybar-Hotspot}{https://github.com/ashish-kus/waybar-hotspot}{ Bash, Zenity, create\_ap, QR}{}
     \resumeItemListStart
-      \resumeItem{Module for monitoring and managing Wi-Fi hotspot status with graphical prompts using Zenity.}
+      \resumeItem{Waybar module for monitoring and managing Wi-Fi hotspot status with graphical prompts using Zenity.}
       \resumeItem{Supports custom configurations for create\_ap and QR code display in tooltips for easy access.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {Pixelify $|$ ReactJS, Bun, Prisma, Sanity, Docker, Netlify}{Jan 2024 – Feb 2024}
+  {Pixelify }{https://github.com/ashish-kus/waybar-hotspot}{ReactJS, Bun, Prisma, Sanity, Docker, Netlify}{}
     \resumeItemListStart
       \resumeItem{Fullstack platform for finding inspiration through pictures, inspired by Pinterest.}
       \resumeItem{Built using Bun, Prisma, ReactJS and Sanity; deployed using Netlify and Docker.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {Vulnerability-Tracker $|$ ReactJS, Bun, Prisma, Docker}{Dec 2023 – Jan 2024}
+  {Vulnerability-Tracker }{https://github.com/ashish-kus/v-track}{ReactJS, Bun, Prisma, Docker}{}
     \resumeItemListStart
       \resumeItem{Fullstack cybersecurity tool to track vulnerabilities detected previously by the system.}
+      \resumeItem{Have features like login, uploading systum logs, quaterly scans and tract vulnerabilities in these quaters.}
     \resumeItemListEnd
 
   \resumeProjectHeading
-    {Batfetch - Linux Battery Information Analyzer $|$ Shell, JSON}{Nov 2023}
+  {Batfetch}{https://github.com/ashish-kus/waybar-hotspot}{Linux Battery Information Analyzer $|$ Shell, JSON}{}
     \resumeItemListStart
       \resumeItem{Command-line tool for detailed presentation of battery info on Linux systems with no dependency.}
       \resumeItem{Provides a JSON output option for easy integration with scripts and automation processes.}
@@ -154,26 +156,26 @@
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
+
 \begin{itemize}[leftmargin=0.15in, label={}]
   \item{
     \small{
-      \textbf{Programming Languages}{: C++, C, Bash, JavaScript, Python, Lua, LaTeX} \\
+      \textbf{Programming Languages}{: C++, C, Bash, JavaScript, Python, Go, Lua, LaTeX} \\
       \textbf{Frameworks \& Libraries}{: ReactJS, FXTUI, TailwindCSS, Chrome Extensions} \\
       \textbf{Databases}{: MySQL, MongoDB} \\
-      \textbf{Tools}{: AWS, QEMU, Linux, Git, GitHub, nVim, Postman, Raspberry Pi, Arduino} \\
+      \textbf{Tools}{: AWS, QEMU, Linux, Git, GitHub, github actions, Docker, nginx, Linux (Arch, Ubuntu), nVim, cPanel} \\
       \textbf{Soft Skills}{: Effective Communication, Problem-Solving, Leadership, Adaptability, Team Collaboration}
     }
   }
 \end{itemize}
 
-
 %-----------COMMUNITY-----------
-\section{Achievements \& Positions of Responsibility}
+\section{Certification, Publication \& Achievements}
 \resumeItemListStart
-  \resumeItem{Published research paper at CVR2025 NIT GOA titled “Adaptive DVFS Application Development Framework for IoT Devices.”}
-  \resumeItem{Winner of Hackathon – recognized for innovative Linux-based solutions in system automation and open-source development.}
-  \resumeItem{Founder of Teach Hackfed Community – fostering tech learning and collaboration.}
-  \resumeItem{Manager, Glitch – led the Annual Tech Fest and Entrepreneurship Summit at GBU.}
+  \resumeItem{Published research paper titled “Adaptive Task-Based CPU Scaling for Efficient Power Allocation in Edge Computing.”}
+  \resumeItem{Introduction to Linux (LFS101) covering core Linux system and various command-line fundamentals by The Linux Foundation.}
+  \resumeItem{Earned the Hacktoberfest 2024 Badges, published multiple packages on Arch User Repositories.}
+  \resumeItem{Winner of multiple hackathons, like Bhabha Bandhu by Michrosoft, Glitch pan-india Hackathon on open source development.}
 \resumeItemListEnd
 
 \end{document}
