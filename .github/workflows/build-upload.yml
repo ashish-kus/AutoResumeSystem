@@ -1,0 +1,47 @@
+name: Build Resume PDF
+
+# Trigger workflow on push to main branch
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    # Run this job on a GitHub-hosted Ubuntu machine
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2️⃣ Build Docker image
+      - name: Build Docker image
+        run: |
+          # Build image using Dockerfile in repo
+          # Tag image as 'resume-builder'
+          docker build -t resume-builder .
+
+      # 3️⃣ Create output folder for mounting
+      - name: Create output folder
+        run: mkdir -p output
+
+      # 4️⃣ Run Docker container to build PDF and upload to S3
+      - name: Compile PDF & Upload to S3
+        run: |
+          docker run --rm \
+            # Mount host output folder to container's /app/output
+            -v ${{ github.workspace }}/output:/app/output \
+            # Set environment variables for S3 bucket and AWS credentials
+            -e S3_BUCKET=${{ secrets.S3_BUCKET }} \
+            -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
+            -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
+            # Run the Docker image
+            resume-builder
+
+      # 5️⃣ (Optional) Upload PDF as a GitHub Actions artifact
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Resume-PDF
+          path: output/Ashish_Kushwaha.pdf
