@@ -1,8 +1,2 @@
-*.aux
-*.log
-*.out
-*.toc
 *.pdf
-*.zip
-*.fdb_latexmk
 *.md
