@@ -4,10 +4,10 @@ FROM texlive/texlive:latest AS builder
 WORKDIR /app
 
 # Copy LaTeX file(s)
-COPY resume.tex .
+COPY main.tex .
 
-RUN latexmk -pdf main.tex
-
+# Compile the PDF
+RUN latexmk -pdf -jobname=Ashish_Kushwaha main.tex
 
 # Stage 2: Minimal image for S3 upload
 FROM amazon/aws-cli:latest
