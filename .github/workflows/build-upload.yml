@@ -40,8 +40,8 @@ jobs:
             resume-builder
 
       # 5️⃣ (Optional) Upload PDF as a GitHub Actions artifact
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+
+      - uses: actions/upload-artifact@v4
         with:
           name: Resume-PDF
           path: output/Ashish_Kushwaha.pdf
