@@ -12,6 +12,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+\usepackage{comment}
 \pdfgentounicode=1
 
 % Margins
@@ -74,7 +75,7 @@
 \section{Education}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Gautam Buddha University}{Greater Noida, Utter Pradesh}
+    {Gautam Buddha University}{Greater Noida, Uttar Pradesh}
     {B. Tech + M. Tech CSE in Software Engineering, CGPA: 8.5}{August 2020 -- Present}
   \resumeSubheading
     {Narayana IIT Academy, Raviryala}{Hydrabad, Telangana State}
@@ -86,12 +87,12 @@
 \section{Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Software Developer Intern | Arial Labs}{June 2024 – Feb 2025}
+    {Software Development Engineer | Arial Labs}{June 2024 – April 2025}
     {California, Remote}{}
     \resumeItemListStart
-      \resumeItem{Started with developing static web pages using React.js and Tailwind CSS, and progressed to independently building the company’s core Chrome extension using Manifest V3 with cross-browser support.}
-      \resumeItem{Integrated Claude API with backend services using AWS Lambda, DynamoDB, and S3 to enable serverless, scalable AI-powered functionality, maintaining the codebase via GitHub.}
-      \resumeItem{Built and deployed the MVP along with an automated dashboard to track user activity and internal operations.}
+      \resumeItem{Independently developed the company’s core Chrome extension using React.js, Tailwind CSS, and Manifest V3 with cross-browser support, following SDLC best practices.}
+      \resumeItem{Integrated Claude API with backend services using AWS Lambda, DynamoDB, and S3 to enable serverless, scalable AI-powered functionality, while maintaining code via GitHub and ensuring cloud security awareness.}
+      \resumeItem{Configured and managed AWS environments, deploying the MVP through automated CI/CD pipelines, and collaborated via Jira to resolve issues with strong troubleshooting and analytical skills.}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -103,6 +104,7 @@
       \resumeItem{Performed ETL processes, exploratory data analysis (EDA), and created visual dashboards using Power BI and Excel.}
     \resumeItemListEnd
 
+\begin{comment}
   \resumeSubheading
     {Web Developer Intern | SOMHH}{Nov 2023 – Jan 2024}
     {Delhi, Remote}{}
@@ -110,7 +112,7 @@
       \resumeItem{Developed a static fundraising website using Svelte and Bootstrap, significantly enhancing digital presence and outreach.}
       \resumeItem{Integrated Razorpay and Stripe payment gateways, streamlining the donation process and improving user experience.}
     \resumeItemListEnd
-
+\end{comment}
 
     \resumeSubheading
     {Web Developer Intern | Gautam Buddha University}{March 2023 – June 2023}
@@ -134,13 +136,41 @@
       \resumeItem{Generates post-interview summaries with tech skills, JD alignment, and key candidate insights via the dashboard.}
     \resumeItemListEnd
 
-
+\begin{comment}
   \resumeProjectHeading
-  {Waybar-Hotspot}{https://github.com/ashish-kus/waybar-hotspot}{ Bash, Zenity, create\_ap, QR}{}
+  {Mtag Gen}{https://github.com/ashish-kus/SEO_metaTag_generater}{Meta Tag Generator $|$ HTML, CSS, JavaScript, Netlify}{}
+  \resumeItemListStart
+    \resumeItem{Developed an intuitive web app to preview and generate SEO meta tags (HTML, Open Graph, Twitter Cards) for websites.}
+    \resumeItem{Allows users to fetch metadata from a URL or manually input values to create optimized tags in seconds.}
+    \resumeItem{Deployed on Netlify and featured a clean UI/UX focused on simplicity, accessibility, and quick SEO validation.}
+  \resumeItemListEnd
+\end{comment}
+
+\resumeProjectHeading
+  {Pixelify}{https://pixelify.netlify.app/}{React, Tailwind CSS, Sanity.io, OAuth, Netlify, Git/GitHub}{}
     \resumeItemListStart
-      \resumeItem{Waybar module for monitoring and managing Wi-Fi hotspot status with graphical prompts using Zenity.}
-      \resumeItem{Supports custom configurations for create\_ap and QR code display in tooltips for easy access.}
+      \resumeItem{A full-stack Pinterest-style image sharing platform with dynamic pin uploads, user authentication, and real-time updates.}
+      \resumeItem{Includes Masonry layout, category filtering, pin detail view with comments, and secure pin creation with upload previews.}
     \resumeItemListEnd
+
+
+\resumeProjectHeading
+  {Huegen – Systems Theme Generator}{https://github.com/ashish-kus/huegen}{ C++17, OpenCV, nlohmann/json, linux, CMake, Template Engine}{}
+    \resumeItemListStart
+      \resumeItem{A C++17 tool to extract dominant colors from images using K-means clustering and LAB-based perceptual filtering.}
+      \resumeItem{Built a template engine to auto-generate multi-format theme files (HEX, RGB, HSL, etc.) for Waybar, Hyprland, and more.}
+      \resumeItem{Designed a modular architecture with customizable templates and automation hooks for instant theme application.}
+    \resumeItemListEnd
+
+\begin{comment}
+
+\resumeProjectHeading
+{Waybar-Hotspot}{https://github.com/ashish-kus/waybar-hotspot}{ Bash, Zenity, create\_ap, QR}{}
+  \resumeItemListStart
+    \resumeItem{Waybar module for monitoring and managing Wi-Fi hotspot status with graphical prompts using Zenity.}
+    \resumeItem{Supports custom configurations for create\_ap and QR code display in tooltips for easy access.}
+  \resumeItemListEnd
+
 
   \resumeProjectHeading
   {Batfetch}{https://github.com/ashish-kus/batfetch}{Linux Battery Information Analyzer $|$ Shell, JSON, CLI, Makefile, AUR}{}
@@ -149,25 +179,26 @@
       \resumeItem{Supports multiple installation methods including AUR, manual install via Makefile, and Nix Flake.}
       \resumeItem{Open source project with 4 open, 4 closed and 2 closed, 1 open pull request. This is avalable on Arch user Repositories.}
     \resumeItemListEnd
+\end{comment}
+
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
    \resumeItemListStart[label={}]
-      \resumeItem{  \textbf{Programming Languages}: C++, C, Bash, JavaScript, Python, Go, Lua, LaTeX, HTML, CSS. } 
-       \resumeItem{ \textbf{Frameworks \& Libraries}: ReactJS, FXTUI, TailwindCSS, Chrome Extensions. }
+      \resumeItem{  \textbf{Programming Languages}: C++, C, Bash, JavaScript, Python, Lua, LaTeX, HTML, CSS. } 
+       \resumeItem{ \textbf{Frameworks \& Libraries}: ReactJS, FXTUI, TailwindCSS, Chrome Extensions, YAML.}
        \resumeItem{\textbf{Databases}: MySQL, MongoDB. }
-       \resumeItem{\textbf{Tools}: AWS, QEMU, Linux, Git, GitHub, github actions, Docker, nginx, Linux (Arch, Ubuntu), nVim, cPanel. }
+       \resumeItem{\textbf{Tools}: SEO, AWS, QEMU, Linux, Git, GitHub, github actions, Docker, nginx, Linux, S3, cloudWatch, Vagrant.}
        \resumeItem{ \textbf{Soft Skills}: Effective Communication, Problem-Solving, Leadership, Adaptability, Team Collaboration. }
   \resumeItemListEnd
 
 %-----------COMMUNITY-----------
 \section{Certification, Publication \& Achievements}
 \resumeItemListStart
-  \resumeItem{Published research paper titled “Adaptive Task-Based CPU Scaling for Efficient Power Allocation in Edge Computing.”}
-  \resumeItem{Introduction to Linux (LFS101) covering core Linux system and various command-line fundamentals by The Linux Foundation.}
-  \resumeItem{Earned the Hacktoberfest 2024 Badges, published multiple packages on AUR,.}
-  \resumeItem{Winner of multiple hackathons, like Bhabha Bandhu by Michrosoft, Glitch pan-india Hackathon on open source development.}
-  \resumeItem{Founder of Hackfed tech community and secretary of Techno Cultural Club and Ecell Gautam Buddha University.}
+  \resumeItem{Published research paper titled “Adaptive Task-Based CPU Scaling for Efficient Power Allocation in Edge Computing” at CVR2025. The paper will be part of the Springer Book Series: Lecture Notes in Networks and Systems.}
+  \resumeItem{Introduction to Linux (LFS101) by The Linux Foundation, covering core Linux systems and essential fundamentals.}
+  \resumeItem{Earned the Hacktoberfest 2024 badge and published multiple packages on the Arch User Repository (AUR).}
+  \resumeItem{Earned the Oracle Cloud Infrastructure Essentials badge, gaining hands-on experience with core OCI services and architecture.}
 \resumeItemListEnd
 
 \end{document}
