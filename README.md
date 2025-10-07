@@ -1,3 +1,5 @@
+![workflow](./assets/warkflow.png)
+
 # 🧰 Automated LaTeX Resume Builder
 
 A fully automated DevOps pipeline that builds a LaTeX resume using Docker and GitHub Actions, and uploads the final PDF to an AWS S3 bucket. This system ensures a reproducible, CI/CD-powered document build process — perfect for showcasing practical DevOps, CI/CD, and cloud integration skills.
