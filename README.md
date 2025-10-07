@@ -16,18 +16,6 @@ Whenever you push new changes to the `main` branch:
 
 This project showcases the power of combining **Docker**, **GitHub Actions**, and **AWS S3** to create a simple, cloud-enabled CI/CD system — all for a LaTeX resume.
 
-## 🏗️ System Flow
-
-```mermaid
-graph TD
-    A[Git Push to main branch] --> B[GitHub Actions Workflow]
-    B --> C[Docker Build using texlive/texlive]
-    C --> D[LaTeX Compilation → PDF]
-    D --> E[Copy PDF to /output folder]
-    E --> F[AWS CLI Upload → S3 Bucket]
-    F --> G[Publicly accessible resume link]
-```
-
 ## 🧩 Repository Structure
 
 ```
